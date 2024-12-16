@@ -1,0 +1,132 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Poppins, sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 24px;
+    width: 100%;
+    max-width: 768px;
+  }
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 256px;
+    margin-bottom: 16px;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .question {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .question h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #16191f;
+  }
+
+  .question p {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #3f4855;
+  }
+
+  .choices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .choices button {
+    background-color: #3b82f6;
+    color: #ffffff;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .choices button:hover {
+    background-color: #2563eb;
+  }
+
+  @media screen and (max-width:768px){
+
+    .container {
+      background-color: #ffffff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 24px;
+      width: 100%;
+      max-width: 720px;
+    }
+
+    question h1 {
+      font-size: 36px;
+      
+    }
+
+    .question p {
+
+      color: #313131;
+      font-size: 20px;
+      line-height: 24px;
+      
+    }
+
+    .choices button {
+      font-size: 24px;
+      
+    }
+
+    
+  }
+
+  @media screen and (max-width: 412px){
+
+    question h1 {
+      font-size: 42px;
+      
+    }
+
+    question p {
+
+      
+      font-size: 14pxpx;
+      line-height: 24px;
+      
+    }
+
+    .choices {
+      display: flex;
+      flex-direction: column;
+    }
+    
+
+  }
